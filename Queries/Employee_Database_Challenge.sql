@@ -1,4 +1,3 @@
--- Use Dictinct with Orderby to remove duplicate rows
 -- Deliverable 1
 -- DROP TABLE if error occurs
 -- DROP TABLE retirement_titles;
@@ -18,7 +17,7 @@ SELECT * FROM retirement_titles;
 
 -- DROP TABLE IF ERROR OCCURS
 -- DROP TABLE unique_titles;
--- Table 2 Unique Titles(Use Retirement Titles)
+-- Table 2 Unique Titles, Use Retirement Titles
 Select DISTINCT ON(rt.emp_no) rt.emp_no, rt.first_name, rt.last_name, rt.title
 INTO unique_titles
 FROM retirement_titles AS rt
@@ -41,6 +40,7 @@ SELECT * FROM retiring_titles_count;
 -- export csv
 -- SELECT SUM (count) FROM retiring_titles_count;
 
+
 -- Deliverable 2
 -- Drop Table if error/ inaccurate data stored for table
 -- DROP TABLE mentorship_eligibilty;
@@ -57,6 +57,6 @@ ORDER BY (e.emp_no) ASC;
 -- VIEW TABLE
 SELECT * FROM mentorship_eligibility;
 -- View Count
-SELECT COUNT(*) FROM mentorship_eligibility;
+SELECT COUNT (*) FROM mentorship_eligibility;
 -- export .csv
 
